@@ -1,10 +1,11 @@
 {
   "name": "@say-id/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "library.js",
     "next.js",
-    "react-internal.js"
+    "react-internal.js",
+    "saylint.js"
   ],
   "devDependencies": {
     "@vercel/style-guide": "^5.2.0",
