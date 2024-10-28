@@ -23,7 +23,7 @@ module.exports = {
     project: "tsconfig.json",
   },
   rules: {
-    quotes: ["error", "double"],
+    quotes: ["warn", "double"],
     "comma-dangle": ["error", "always-multiline"],
     camelcase: [
       "off",
