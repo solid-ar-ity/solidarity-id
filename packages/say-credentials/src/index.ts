@@ -1,1 +1,3 @@
-console.log('Hello, world!');
+export const sayCredentials = () => {
+  console.log("sayCredentials")
+}

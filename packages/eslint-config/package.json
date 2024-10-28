@@ -1,6 +1,6 @@
 {
   "name": "@say-id/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "files": [
     "library.js",
     "next.js",
@@ -8,12 +8,16 @@
     "saylint.js"
   ],
   "devDependencies": {
-    "@vercel/style-guide": "^5.2.0",
-    "eslint-config-turbo": "^2.0.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-only-warn": "^1.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
+    "@stylistic/eslint-plugin-ts": "^2.9.0",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vercel/style-guide": "^5.2.0",
+    "eslint-config-jsdoc": "^15.4.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-turbo": "^2.0.0",
+    "eslint-plugin-jsdoc": "^50.4.3",
+    "eslint-plugin-only-warn": "^1.1.0",
     "typescript": "^5.3.3"
   }
 }
