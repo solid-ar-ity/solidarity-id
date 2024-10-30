@@ -1,0 +1,1 @@
+// Shout-out is a package that exports a function that takes a VC and returns a string

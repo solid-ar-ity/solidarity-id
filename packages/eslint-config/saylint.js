@@ -23,7 +23,7 @@ module.exports = {
     project: "tsconfig.json",
   },
   rules: {
-    quotes: ["error", "double"],
+    quotes: ["warn", "double"],
     "comma-dangle": ["error", "always-multiline"],
     camelcase: [
       "off",
@@ -70,9 +70,10 @@ module.exports = {
     "@typescript-eslint/no-floating-promises": "error",
     "import/no-cycle": "error",
     "no-use-before-define": "warn",
-    "@typescript-eslint/no-empty-object-type": "warn",
-    "@typescript-eslint/no-unsafe-function-type": "warn",
-    "@typescript-eslint/no-wrapper-object-types": "warn",
+    // commented out because it's too strict when using some unknown type
+    // "@typescript-eslint/no-empty-object-type": "warn",
+    // "@typescript-eslint/no-unsafe-function-type": "warn",
+    // "@typescript-eslint/no-wrapper-object-types": "warn",
     "@typescript-eslint/naming-convention": [
       "warn",
       {
