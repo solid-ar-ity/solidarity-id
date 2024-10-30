@@ -1,3 +1,1 @@
-export const sayCredentials = () => {
-  console.log("sayCredentials")
-}
+export * from "./libs/index.js"
