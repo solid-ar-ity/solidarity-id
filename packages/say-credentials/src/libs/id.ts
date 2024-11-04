@@ -2,6 +2,7 @@ import { createAgent, IDIDManager, IResolver, IDataStore, IKeyManager, ICredenti
 import { DIDManager } from "@veramo/did-manager"
 import { EthrDIDProvider } from "@veramo/did-provider-ethr"
 import { WebDIDProvider } from "@veramo/did-provider-web"
+import { KeyDIDProvider } from "@veramo/did-provider-key"
 import { KeyManager } from "@veramo/key-manager"
 import { KeyManagementSystem, SecretBox } from "@veramo/kms-local"
 import { CredentialPlugin } from "@veramo/credential-w3c"
@@ -42,8 +43,11 @@ export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataS
     }),
     new DIDManager({
       store: new DIDStore(dbConnection),
-      defaultProvider: "did:ethr:sepolia",
+      defaultProvider: "did:key",
       providers: {
+        "did:key": new KeyDIDProvider({
+          defaultKms: "local",
+        }),
         "did:ethr:sepolia": new EthrDIDProvider({
           defaultKms: "local",
           network: "sepolia",
